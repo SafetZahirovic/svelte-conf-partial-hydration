@@ -27,10 +27,9 @@
         maxIndex = i;
       }
     }
-    
+
     if (maxRatio > 0) value = maxIndex;
     else value = undefined;
-    console.log(value)
     step.set(value)
   };
 
