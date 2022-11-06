@@ -1,36 +1,36 @@
 {
-  "name": "demo-ssr",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "node server",
-    "build": "npm run build:server & npm run build:client",
-    "build:client": "vite build --ssrManifest --outDir dist/client",
-    "build:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
-    "preview": "cross-env NODE_ENV=production node server"
-  },
-  "workspaces": [
-    "crown"
-  ],
-  "dependencies": {
-    "compression": "^1.7.4",
-    "d3-array": "latest",
-    "d3-scale": "latest",
-    "express": "^4.18.1",
-    "sirv": "^2.0.2",
-    "svelte-cubed": "0.2.1",
-    "three": "0.146.0"
-  },
-  "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^1.0.1",
-    "@tsconfig/svelte": "^3.0.0",
-    "cross-env": "^7.0.3",
-    "svelte": "^3.49.0",
-    "svelte-check": "^2.8.0",
-    "svelte-preprocess": "^4.10.7",
-    "tslib": "^2.4.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.1"
-  }
+	"name": "demo-ssr",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "node server",
+		"build": "npm run build:server & npm run build:client",
+		"build:client": "vite build --ssrManifest --outDir dist/client",
+		"build:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
+		"preview": "cross-env NODE_ENV=production node server"
+	},
+	"workspaces": [
+		"crown"
+	],
+	"dependencies": {
+		"compression": "^1.7.4",
+		"express": "^4.18.1",
+		"sirv": "^2.0.2"
+	},
+	"devDependencies": {
+		"d3-array": "latest",
+		"gsap": "3.11.3",
+		"d3-scale": "latest",
+		"svelthree": "0.119.0-5",
+		"@sveltejs/vite-plugin-svelte": "^1.0.1",
+		"@tsconfig/svelte": "^3.0.0",
+		"cross-env": "^7.0.3",
+		"svelte": "^3.49.0",
+		"svelte-check": "^2.8.0",
+		"svelte-preprocess": "^4.10.7",
+		"tslib": "^2.4.0",
+		"typescript": "^4.6.4",
+		"vite": "^3.0.1"
+	}
 }

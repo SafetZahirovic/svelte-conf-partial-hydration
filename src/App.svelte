@@ -11,8 +11,7 @@
 	import Fifth from "lazy:lib/Fifth.svelte";
 	import Sixth from "lazy:lib/Sixth.svelte";
 
-	let API_KEY = import.meta.env.API_KEY;
-	console.log(API_KEY);
+	const API_KEY = import.meta.env.VITE_API_KEY;
 
 	const steps = [First, Second, Third, Fourth, Fifth, Sixth];
 </script>
